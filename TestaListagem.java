@@ -19,10 +19,8 @@ public class TestaListagem {
 			String nome = rst.getString("nome");
 			String descricao = rst.getString("descricacao");
 
-			System.out.print(id + " | ");
-			System.out.print(nome + " | ");
-			System.out.println(descricao);
-			System.out.println();
+			System.out.println(id + " | " + nome + " | " + descricao);
+			//System.out.println();
 		}
 		
 		con.close();
