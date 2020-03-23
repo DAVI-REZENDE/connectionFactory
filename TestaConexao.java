@@ -8,7 +8,7 @@ public class TestaConexao {
 		ConnectionFactory connectionFactory = new ConnectionFactory();
 		Connection con = connectionFactory.recuperaConexao();
 		
-				System.out.println("Fechando conex√£o!!!");
+				System.out.println("Fechando conex„o!!!");
 		con.close();
 		
 	}

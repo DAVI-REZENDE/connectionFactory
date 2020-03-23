@@ -11,7 +11,7 @@ public class TestaInsercaocomProduto {
 		Produto comada = new Produto("Computador", "Computador de Mesa");
 		
 		try(Connection con = new ConnectionFactory().recuperaConexao()){
-			String sql = "insert into produto (nome, descricacao) values (?, ?)";
+			String sql = "insert into produto (nome, descricao) values (?, ?)";
 			
 			try(PreparedStatement pstm = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
 				pstm.setString(1, comada.getNome());

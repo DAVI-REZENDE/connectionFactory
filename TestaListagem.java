@@ -17,7 +17,7 @@ public class TestaListagem {
 		while(rst.next()) {
 			Integer id = rst.getInt("id");
 			String nome = rst.getString("nome");
-			String descricao = rst.getString("descricacao");
+			String descricao = rst.getString("descricao");
 
 			System.out.println(id + " | " + nome + " | " + descricao);
 			//System.out.println();
